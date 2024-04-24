@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: white;
+    color: #fff;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(headerpic.png);
+    background-size: cover;
+    background-position: center;}
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       position: fixed;
+       background-color: #fff;
+       width: 100%;
+      
+       
+       top: 0;
+       left: 0;
+    }
+    nav img{
+        width: 140px;
+        margin-left: 40px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    
+    
+    }
+    nav ul li a{
+        color: #004AAD;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+    nav ul li a:hover{
+        color: #6fa254;
+       
+        
+        
+    
+    }
+    nav ul li a:hover::after{
+        font-weight: bolder;
+    }
+    .header-text h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        font-size: 60px;
+        
+    }
+    .header-text{
+        margin-top: 15%;
+        font-size: 30px;
+        color: #004AAD;
+    }
+    .header-text span{
+        color: #004AAD;
+    }
+    .header-text p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #004AAD;
+    }
+    .btn button{
+        border-radius: 20px;
+        border: none;
+        height: 35px;
+        width: 130px;
+        margin-top: 15px;
+        background-color: #E08264;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+    
+    }
+    .btn button:hover{
+        border-color: #fff;
+        border-width: 20px;
+    }
+    .container{
+        padding: 10px 10%;
+    }
+    .about h1{
+        color: #004AAD;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 80px;
+    }
+    .about p{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 20px;
+        font-size: larger;
+    }
+    #aboutus{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #87E1B1;
+        
+    }
+    .logo img{
+        width: 100%;
+    height: 360px;
+    }
+     .btn1 button{
+        border-radius: 20px;
+        border: none;
+        height: 35px;
+        width: 130px;
+        margin-top: 15px;
+        background-color: #E08264;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 30px;
+     }
+     #scroll {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+    
+    #h1 h1{
+        color: #004AAD;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 30px;
+        margin-bottom: 20px;
+       
+        text-align: center;
+        font-size: 50px;
+    }
+    #testimonals{
+        padding: 30px 0;
+    }
+    .tests{
+       
+        margin-top: 50px;
+        width: 200px;
+        display: inline-block;
+        
+        justify-content: space-between;
+    
+    }
+    .tests div{
+        background: #F8C58A;
+        padding: 40px;
+        font-size: 13px;
+        font-weight: 300;
+        border-radius: 10px;
+        transition: background 0.5s, transform 0.5s;
+        border-color: #004AAD;
+        border-width: 20px;
+        display: grid;
+    }
+    .tests div h2{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        
+    }
+   
+    
+    #testimonals h1{
+        color: #004AAD;
+        text-align: center;
+        
+    }
+    .tests div:hover{
+        
+        transform: translateY(-10px);
+    }
+    .slides {
+        display: flex;
+        overflow-x: auto;
+        overflow-x: auto;
+      }
+      .slides > div {
+        display: flex;
+        flex-shrink: 0;
+        width: 100%;
+        height: 300px;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+        background: #74ABE2;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+      }
+    
+    .contact-left{
+        flex-basis: 35%;
+    }
+    .contact-right{
+        flex-basis: 60%;
+    }
+    .contact-left p{
+        margin-top: 30px;
+        color: #004AAD;
+    
+    }
+    .contact-left h1{
+        color: #004AAD;
+    }
+    .row{
+        display: flex;
+    }
+   
+   
+    
+    .btn2{
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: #004AAD;
+        border-width: 2px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        border-color: white;
+        cursor: pointer;
+    }
+    
+    .btn2:hover{
+        border-width: 3px;
+        background-color: lightblue;
+    }
+    .contact-right form{
+        width: 100%;
+    
+    }
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background-color: lightblue;
+        padding: 15px;
+        margin: 15px 0;
+        color: black;
+        font-size: 18px;
+        border-radius: 6px;
+    
+    }
+   
+    
+    .copyright{
+        margin-top: 10px;
+        background-color: #262626;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright p{
+        margin-top: 20px;
+    }
+    #contact{
+        margin-top: 100px;
+    }
+    .copyright p{
+        margin-top: 50px;
+    }
+    
